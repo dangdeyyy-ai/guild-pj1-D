@@ -10,8 +10,8 @@ footer.innerHTML = `
                     CompanyName @ 202X. All rights reserved.
                 </div>
             </div>
-            <div class="flex-r j-between">
-                <div class="flex-r g48">
+            <div class="flex-r t-flex-c g20 j-between">
+                <div class="flex-r t-flex-wrap g48 t-g20">
                     <div class="linkContainer">
                         <div class="linkType">
                             Links
