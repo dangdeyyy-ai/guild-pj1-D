@@ -30,6 +30,14 @@ html, body {
     overflow-x: hidden;
     background-color: #ffffff;
 }
+.logo {
+    background-image: url(/assets/logo/logo.svg);
+    background-color: rgb(0, 136, 255);
+    width: 181px;
+    height: 39px;
+    background-position: 50%;
+    background-size: contain;
+}
 header, footer {
     background-color: #ECFFF5;
 }
@@ -60,6 +68,12 @@ footer {
         font-weight: 500;
     }
 }
+section {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .heading {
     display: flex;
     flex-direction: column;
@@ -80,20 +94,6 @@ footer {
         font-size: 42px;
         font-weight: 700;
     }
-}
-section {
-    padding: 40px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo {
-    background-image: url(/assets/logo/logo.svg);
-    background-color: rgb(0, 136, 255);
-    width: 181px;
-    height: 39px;
-    background-position: 50%;
-    background-size: contain;
 }
 .container {
     width: 95%;
@@ -130,7 +130,7 @@ button {
 .PC { display: flex }
 button.primary { background-color: var(--primary); color: white }
 button.secondary { border: 2px solid var(--primary); color: var(--primary); background-color: #f8f9fe00 }
-button.tertiary { border: 0; color: var(--primary); background-color: transparent;padding: 0 }
+button.tertiary { border: 0; color: var(--primary); background-color: transparent; padding: 0 }
 button.signIn, button.signUp {
     padding: 16px;
     width: 120px;
