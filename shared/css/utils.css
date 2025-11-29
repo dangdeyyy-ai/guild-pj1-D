@@ -5,9 +5,19 @@
     font-family: var(--f-primary);
 }
 :root {
+    --bg-light: #F4FFF9;
     --primary: #00E06E;
     --text-black: #21272A;
     --f-primary: "Roboto"
+}
+.c-green {
+    color: var(--primary);
+}
+.c-black {
+    color: var(--text-black);
+}
+.bg-green {
+    color: var(--bg-light);
 }
 html, body {
     height: 100%;
