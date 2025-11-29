@@ -1,0 +1,22 @@
+.c-white {
+    color: white;
+}
+.hero {
+    background-image: url(/assets/background/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 20px 64px;
+    .container {
+        margin: 0 auto;
+        text-align: center;
+        height: 100%;
+        align-content: end;
+    }
+}
+
+main {
+    background-color: white;
+    padding: 40px 0;
+}
