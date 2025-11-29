@@ -16,4 +16,22 @@
 main {
     background-color: white;
     padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    .card {
+        padding: 12px;
+        border-radius: 15px;
+    }
+    .image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40%;
+        .blood {
+            background-image: url(/assets/activites-picture/blood.png);
+        }
+    }
+    .content {
+        width: 60%;
+    }
 }
