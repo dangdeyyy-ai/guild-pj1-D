@@ -17,7 +17,7 @@
     color: var(--text-black);
 }
 .bg-green {
-    color: var(--bg-light);
+    background-color: var(--bg-light);
 }
 html, body {
     height: 100%;
