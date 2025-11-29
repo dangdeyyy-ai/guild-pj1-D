@@ -16,6 +16,9 @@
 .c-black {
     color: var(--text-black);
 }
+.c-white {
+    color: white;
+}
 .bg-green {
     background-color: var(--bg-light);
 }
@@ -43,12 +46,12 @@ body {
     background-color: #ffffff;
 }
 .logo {
-    background-image: url(/assets/logo/logo.svg);
-    background-color: rgb(0, 136, 255);
-    width: 181px;
-    height: 39px;
+    background-image: url(/assets/logo/logo.png);
+    width: 116px;
+    height: 47px;
     background-position: 50%;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 header,
 footer {
@@ -135,6 +138,7 @@ button {
 
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
 
     padding: 12px 16px;
 }
