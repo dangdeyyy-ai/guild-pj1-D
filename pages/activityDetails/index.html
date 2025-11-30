@@ -19,7 +19,7 @@
             <section class="section1">
                 <div class="container">
                     <div class="flex-c g20 a-start">
-                        <button class="tertiary">
+                        <button class="tertiary" onclick="window.location.assign(`/pages/activities`)">
                             <img src="/assets/svg/arrow-forward-b.svg" />
                             <div class="f16 w5 c-black">Return back</div>
                         </button>
@@ -28,68 +28,33 @@
                             <div class="flex-c g12 box m-g16">
                                 <div class="flex-c g12 information">
                                     <div class="flex-c">
-                                        <div
-                                            class="w7 f40 line m-f24"
-                                            id="title"
-                                        >
-                                            Blood donation program
+                                        <div class="w7 f40 line m-f24" id="title">
                                         </div>
-                                        <div
-                                            class="w4 f26 m-f18"
-                                            id="organizer"
-                                        >
+                                        <div class="w4 f22 m-f18">
                                             Hosted by
-                                            <span class="w5">
-                                                Saigon Times Group</span
-                                            >
+                                            <span class="w5" id="organizer"></span>
                                         </div>
                                     </div>
                                     <div class="flex-c g12">
-                                        <div
-                                            class="f20 w4 m-f16"
-                                            id="signUpTime"
-                                        >
-                                            <span class="w5 m-w7"
-                                                >Sign up time: </span
-                                            >Before 01/10/2025
+                                        <div class="f20 w4 m-f16">
+                                            <span class="w5 m-w7">Sign up time: </span>
+                                            <span id="signUpTime"></span>
                                         </div>
-                                        <div
-                                            class="f20 w4 m-f16"
-                                            id="eventTime"
-                                        >
-                                            <span class="w5 m-w7"
-                                                >Event time: </span
-                                            >4/10/2025 (7:30 to 11:50)
+                                        <div class="f20 w4 m-f16">
+                                            <span class="w5 m-w7">Event time: </span>
+                                            <span id="eventTime">
+                                            </span>
                                         </div>
-                                        <div
-                                            class="f20 w4 m-f16"
-                                            id="eventLocation"
-                                        >
-                                            <span class="w5 m-w7"
-                                                >Event Location: </span
-                                            >35 Nam Ky Khoi Nghia, Ben Thanh
-                                            Ward, Ho Chi Minh City
+                                        <div class="f20 w4 m-f16">
+                                            <span class="w5 m-w7">Event Location: </span>
+                                            <span  id="eventLocation">
+                                            </span>
                                         </div>
                                     </div>
-                                    <div
-                                        class="f18 w4 c-black m-f16"
-                                        id="description"
-                                    >
-                                        Ho Chi Minh City is lacking blood
-                                        because the amount of donations has
-                                        decreased. In July 2025, it received
-                                        less than needed, so the reserve
-                                        decreased sharply. The health sector
-                                        warns that it may only meet 70–80% of
-                                        treatment needs. The Department of
-                                        Health calls on people and units to
-                                        increase blood donation, and Saigon
-                                        Times Group organizes Blood Donation Day
-                                        2025 to contribute to solving this
-                                        situation.
+                                    <div class="f18 w4 c-black m-f16" id="description" >
                                     </div>
                                 </div>
-                                <button class="primary">
+                                <button class="primary" onclick="window.location.assign(`/pages/activitesConfirmation/`)">
                                     <div>Participate</div>
                                     <img
                                         src="/assets/svg/arrow-forward-w.svg"

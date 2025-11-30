@@ -3,6 +3,8 @@
     background-size: cover;
     background-position: 50%;
     height: calc(95vh - 80px);
+    max-height: 763px;
+    min-height: 400px;
     position: relative;
     .overlay {
         position: absolute;
@@ -41,6 +43,19 @@
         }
     }
 }
+@media only screen and (max-width: 1024px) {
+    .section2 {
+        .card {
+            width: calc(100% / 2 - 16px * 1 / 2);
+        }
+    }
+    .section3 {
+        .card {
+            width: 100% !important;
+            max-width: 660px;
+        }
+    }
+}
 .section3 {
     background-color: var(--bg-gray50);
     .card {
@@ -62,6 +77,19 @@
         }
     }
 }
+@media only screen and (max-width: 660px) {
+    .section2 {
+        .card {
+            width: 95%;
+            max-width: 300px;
+        }
+    }
+    .section3 {
+        .card {
+            width: 100%;
+        }
+    }
+}
 .section5 {
     .container {
         display: flex;
@@ -69,13 +97,13 @@
         gap: 64px;
         justify-content: space-between;
         .left {
-            background-image: url(/assets/faq.jpg);
+            background-image: url(/assets/background/hand.jpg);
             background-size: cover;
             background-position: 50%;
             min-height: 475px;
             height: 100%;
             width: calc(100% / 2 - 64px / 2);
-            border: 10px solid white;
+            border: 10px solid var(--primary);
         }
         .right {
             text-align: center;

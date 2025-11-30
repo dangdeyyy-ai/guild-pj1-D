@@ -1,0 +1,95 @@
+
+.section1 {
+    .container {
+        width: 95%;
+        max-width: 850px;
+    }
+}
+.box1 {
+    max-width: 940px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    .card {
+        width: calc((100% - 16px) / 2);
+    }
+    input, textarea {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #c1c7cd;
+        padding: 16px;
+        height: 48px;
+        border-radius: 10px;
+        background-color: #f2f4f8;
+        font-size: 15px;
+    }
+    input::placeholder {
+        color: #697077b5;
+        font-size: 15px;
+    }
+    input:focus {
+        outline: none;
+    }
+    textarea {
+        height: 128px;
+    }
+    textarea::placeholder {
+        color: #697077b5;
+        font-size: 15px;
+    }
+    textarea:focus {
+        outline: none;
+    }
+    .primary {
+        width: 120px;
+    }
+}
+.hero {
+    background-image: url(/assets/background/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 20px 64px;
+    .container {
+        margin: 0 auto;
+        text-align: center;
+        height: 100%;
+        align-content: end;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        height: 200px;
+    }
+    .section1 {
+        padding: 40px 0;
+    }
+    .box1 {
+        .card {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 660px) {
+    .hero {
+        height: 150px;
+    }
+    .box1 {
+        .card {
+            width: 100%;
+            input {
+                font-size: 1rem;
+            }
+        }
+        .inputChange {
+            font-size: 1rem;
+        }
+        .primary {
+            width: 100%;
+            font-size: 15px;
+            padding: 8px;
+        }
+    }
+}

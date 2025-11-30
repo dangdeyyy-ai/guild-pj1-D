@@ -20,14 +20,14 @@
             </div>
             <div class="container">
                 <div class="flex-c g24 a-center text-center">
-                    <div class="f42 w7 line46 c-white">
+                    <div class="f42 t-f30 m-f25 w7 line46 m-line29 c-white">
                         One small decision.<span class="c-green">Thousand of lives changed</span>
                     </div>
-                    <div class="f26 w4 c-white">
+                    <div class="f26 t-f20 m-14 w4 c-white">
                         Your decisions today can help others in ways you never would have though possible<br>
                         Join now and make the world a better place for all. One step at a time.
                     </div>
-                    <button class="primary">
+                    <button class="primary" onclick="window.location.assign('/pages/activities/')">
                         See our activities
                         <img src="/assets/svg/arrow-forward-w.svg"> 
                     </button>
@@ -37,14 +37,14 @@
         <section class="section2 bg-green">
             <div class="container flex-c g32">
                 <div class="flex-c g8 text-center">
-                    <div class="f42 w5">
+                    <div class="f42 t-f30 w5">
                         What we have <span class="c-green">achieved</span> over the years
                     </div>
-                    <div class="f27 line35 w6">
+                    <div class="f27 t-f22 line35 t-line24 w6">
                         We've grown a lot over these years, thanks to <span class="c-green">you</span> and everyone involved
                     </div>
                 </div>
-                <div class="flex-r g24 t-flex-wrap a-center">
+                <div class="flex-r g24 t-g16 t-flex-wrap m-flex-nowrap m-flex-c a-center">
                     <div class="card">
                         <img src="/assets/svg/smile.svg">
                         <div class="flex-c">
@@ -98,13 +98,13 @@
                     <div class="caption">
                         notable events
                     </div>
-                    <div class="title">
+                    <div class="title t-f24">
                         Some of our recent activities
                     </div>
                 </div>
-                <div class="flex-r g16 flex-wrap">
+                <div class="flex-r g32 flex-wrap j-center">
                     <div class="card">
-                        <div class="image">
+                        <div class="image" style="background-image: url(/assets/activities-picture/blood.png);">
 
                         </div>
                         <div class="text flex-c g10 a-start">
@@ -119,7 +119,7 @@
                             <div class="f18 w4 line21">
                                 A blood donation event hosted by Saigon Times Group to help the blood crisis
                             </div>
-                            <button class="tertiary">
+                            <button class="tertiary" onclick="setEvent(`Blood donation program`)">
                                 <span class="f18 w5">
                                     More Info
                                 </span>
@@ -128,22 +128,22 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="image">
+                        <div class="image" style="background-image: url(/assets/activities-picture/heart.png);">
 
                         </div>
                         <div class="text flex-c g10 a-start">
                             <div class="flex-c g2">
                                 <div class="f24 w7 line26">
-                                    Blood donation program
+                                    Run For The Heart
                                 </div>
                                 <div class="f16 w5 line117">
-                                    Hosted by Saigon Times Group
+                                    Hosted by Gamuda Land Vietnam
                                 </div>
                             </div>
                             <div class="f18 w4 line21">
-                                A blood donation event hosted by Saigon Times Group to help the blood crisis
+                                Raise funds for heart surgery for underprivileged children with congenital heart defects
                             </div>
-                            <button class="tertiary">
+                            <button class="tertiary" onclick="setEvent(`Run For The Heart`)">
                                 <span class="f18 w5">
                                     More Info
                                 </span>
@@ -152,46 +152,22 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="image">
+                        <div class="image" style="background-image: url(/assets/activities-picture/activities2.png);">
 
                         </div>
                         <div class="text flex-c g10 a-start">
                             <div class="flex-c g2">
                                 <div class="f24 w7 line26">
-                                    Blood donation program
+                                    2025 Volunteer Campaign
                                 </div>
                                 <div class="f16 w5 line117">
-                                    Hosted by Saigon Times Group
+                                    Hosted by Nguyen Huu Tien
                                 </div>
                             </div>
                             <div class="f18 w4 line21">
-                                A blood donation event hosted by Saigon Times Group to help the blood crisis
+                                Promote their pioneering spirit, contribute their youthful energy, and grow through volunteer activities
                             </div>
-                            <button class="tertiary">
-                                <span class="f18 w5">
-                                    More Info
-                                </span>
-                                <img src="/assets/svg/arrow-forward-g.svg">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-
-                        </div>
-                        <div class="text flex-c g10 a-start">
-                            <div class="flex-c g2">
-                                <div class="f24 w7 line26">
-                                    Blood donation program
-                                </div>
-                                <div class="f16 w5 line117">
-                                    Hosted by Saigon Times Group
-                                </div>
-                            </div>
-                            <div class="f18 w4 line21">
-                                A blood donation event hosted by Saigon Times Group to help the blood crisis
-                            </div>
-                            <button class="tertiary">
+                            <button class="tertiary" onclick="setEvent(`2025 Volunteer Campaign`)">
                                 <span class="f18 w5">
                                     More Info
                                 </span>
@@ -205,14 +181,14 @@
         <section class="section4 bg-green"  id="partner">
             <div class="container flex-c g32">
                 <div class="flex-c g8 text-center">
-                    <div class="f42 w5 c-green">
+                    <div class="f42 t-f30 m-f-25 w5 c-green">
                         Our Partners
                     </div>
-                    <div class="f27 line35 w4">
+                    <div class="f27 t-f21 m-f18 line35 w4">
                         Thanks to them, we can continue to operate and host these events to help people in needs
                     </div>
                 </div>
-                <div class="flex-r j-between flex-wrap brands g30">
+                <div class="flex-r j-between flex-wrap brands t-j-center g30">
                     <div>
                         <img src="/assets/svg/logo-1.svg">
                     </div>
@@ -244,35 +220,34 @@
                         <div class="flex-c">
                             <div class="question">
                                 <span>
-                                    Why should I use this website?
+                                    What is this website?
                                 </span>
                                 <img src="/assets/svg/plus.svg">
                             </div>
                             <div class="answer" style="display: none;">
-                                Our website is one of a kind, featuring lots of amazing book that are currently not available as E-Book
-                                anywhere else. You can also get pretty sweet deals with these books we're offering
+                                This website purpose is for people who wants to do charity or others community activities to help people to find the currently available activities and help out
                             </div>
                         </div>
                         <div class="flex-c">
                             <div class="question">
                                 <span>
-                                    How frequently we update?
+                                    How do I sign up for an activity
                                 </span>
                                 <img src="/assets/svg/plus.svg">
                             </div>
                             <div class="answer" style="display: none;">
-                                We update quite frequently, between 3 days and 14 days
+                                Just go to the activities page and click on the activity that you want to join after that click participate and fill out your information and then you're good to go
                             </div>
                         </div>
                         <div class="flex-c">
                             <div class="question">
                                 <span>
-                                    How do I paid for my books?
+                                    What happened if I signed up but can't attend?
                                 </span>
                                 <img src="/assets/svg/plus.svg">
                             </div>
                             <div class="answer" style="display: none;">
-                                Just click on the "Buy Now" button on the book you wants to buy. We accept a lot of payment methods so don't you worry
+                                Don't worry you can still join the activity if it's an event that last for more than a day. But if you can't attend that's alright as well
                             </div>
                         </div>
                         <div class="flex-c">
@@ -283,7 +258,7 @@
                                 <img src="/assets/svg/plus.svg">
                             </div>
                             <div class="answer" style="display: none;">
-                                Yes! Why don't actually store your information or credit card information anywhere in our database, but we do have to store what the laws required us to do (Payment history, Transaction date,...)
+                                Yes! Why don't actually store your information or credit card information anywhere in our database
                             </div>
                         </div>
                         <div class="flex-c">
@@ -294,7 +269,7 @@
                                 <img src="/assets/svg/plus.svg">
                             </div>
                             <div class="answer" style="display: none;">
-                                Currently you can message us through our social (The links are the footer). For more serious bussiness or legal matter please send it through email. We'll respond in 3 to 5 bussiness days
+                                Currently you can message us through our social (The links are the footer). For more serious bussiness or legal matter please send it through email or through our Contact us page. We'll respond in 3 to 5 bussiness days
                             </div>
                         </div>
                     </div>
@@ -306,5 +281,6 @@
     </footer>
 </body>
 <script src="../../shared/js/layout.js"></script>
+<script src="../../shared/js/activity.js"></script>
 <script src="index.js"></script>
 </html>

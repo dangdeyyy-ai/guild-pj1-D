@@ -41,11 +41,11 @@ let activitiesDesciption = [
     "To create an environment for students to promote their pioneering spirit, contribute their youthful energy, and grow through volunteer activities, while contributing to sustainable development goals in alignment with the university’s strategic orientation.",    
 ]
 let activitiesURL = [
-    "assets/activities-picture/blood.png",
-    "assets/activities-picture/activities2.png",
-    "assets/activities-picture/spring.png",
-    "assets/activities-picture/heart.png",
-    "assets/activities-picture/steps.png",
+    "/assets/activities-picture/blood.png",
+    "/assets/activities-picture/activities2.png",
+    "/assets/activities-picture/spring.png",
+    "/assets/activities-picture/heart.png",
+    "/assets/activities-picture/steps.png",
 ]
 let activity = {
     name: "",
@@ -68,4 +68,45 @@ function setEvent(name) {
     activity.imageURL = activitiesURL[activityID]
 
     localStorage.setItem("currentEvent", JSON.stringify(activity))
+    window.location.assign('/pages/activityDetails/')
 }
+function getEvent() {
+    return JSON.parse(localStorage.getItem("currentEvent"))
+}
+function buildPage(event = getEvent()) {
+    let picture = document.getElementById("picture") || ""
+    if (picture != "") {
+        picture.style.backgroundImage = `url(${event.imageURL.replace("\"", "")})`
+    }
+
+    let eventName = document.getElementById("title") || ""
+    if (eventName != "") {
+        eventName.textContent = event.name
+    }
+
+    let eventHost = document.getElementById("organizer") || ""
+    if (eventHost != "") {
+        eventHost.textContent = event.host
+    }
+
+    let eventSignUpTime = document.getElementById("signUpTime") || ""
+    if (eventSignUpTime != "") {
+        eventSignUpTime.textContent = event.signUpTime
+    }
+
+    let eventTime = document.getElementById("eventTime") || ""
+    if (eventTime != "") {
+        eventTime.textContent = event.time
+    }
+
+    let eventLocation = document.getElementById("eventLocation") || ""
+    if (eventLocation != "") {
+        eventLocation.textContent = event.location
+    }
+
+    let eventDescription = document.getElementById("description") || ""
+    if (eventDescription != "") {
+        eventDescription.textContent = event.description
+    }
+}
+buildPage()
