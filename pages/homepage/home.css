@@ -2,7 +2,7 @@
     background: url(/assets/background/header-background.png);
     background-size: cover;
     background-position: 50%;
-    height: calc(90vh - 80px);
+    height: calc(95vh - 80px);
     position: relative;
     .overlay {
         position: absolute;

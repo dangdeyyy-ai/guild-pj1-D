@@ -70,10 +70,11 @@ footer.innerHTML = `
 `
 header.innerHTML = `
         <div class="container flex-r j-between">
+            <img src="/assets/svg/Menu.svg" class="Tablet Mobile">
             <div class="logo">
 
             </div>
-            <menu>
+            <menu class="PC">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
                 <a href="../../pages/activities/" id="activities">Activities</a>
                 <a href="../../pages/contactUs/" id="contactUs">Contact us</a>
