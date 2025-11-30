@@ -47,13 +47,13 @@ footer.innerHTML = `
                             Contact Information
                         </div>
                         <div class="link">
-                            Address: Car/47 Pripi Road,  Main Area 1, Garn47 Reality
+                            Address: 123 That road, This city, Random Country
                         </div>
                         <div class="link">
-                            Phone Number: 0-1800-FORMSPIRE
+                            Phone Number: 0-1800-INFORMATION
                         </div>
                         <div class="link">
-                            Gmail: Garn47FormSpire@carr.reality
+                            Gmail: abluecat@waitingforever.com
                         </div>
                     </div>
                 </div>
