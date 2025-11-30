@@ -1,0 +1,46 @@
+.section1 {
+    height: 100%
+}
+
+.pictureActivities {
+    background-image: url(/);
+    background-size: cover;
+    object-fit: cover;
+    width: calc((100% - 20px) / 2);
+    height: 393.94px;
+    background-position: 50%;
+}
+.box {
+    width: calc((100% - 20px) / 2);
+    height: auto;
+    .primary {
+        width: 141px;
+        height: 54px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .section1 {
+        height: max-content;
+        padding: 20px;
+    }
+    .pictureActivities {
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .pictureActivities {
+        height: 250.94px;
+    }
+    .box {
+        .information {
+            order: 1;
+        }
+        .primary {
+            order: 0;
+            width: 100%;
+        }
+    }
+}

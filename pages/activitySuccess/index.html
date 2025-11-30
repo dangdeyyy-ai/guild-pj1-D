@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../shared/css/utils.css">
-    <link rel="stylesheet" href="activitiesSuccess.css">
-</head>
-<body>
-    <header id="header">
-    </header>
-    <main></main>
-    <footer id="footer">
-    </footer>
-</body>
-<script src="../../shared/js/layout.js"></script>
-<script src="index.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../shared/css/utils.css" />
+        <link rel="stylesheet" href="activitiesSuccess.css" />
+    </head>
+    <body>
+        <header id="header"></header>
+        <main>
+            <section class="section1">
+                <div class="container">
+                    <div class="a-center j-center">
+                        <div class="box flex-c a-center g10 j-between">
+                            <div class="f36 w7 m-f26 c-green">
+                                Event signed up successfully
+                            </div>
+                            <div class="flex-c g5 a-start j-between text-center">
+                                <div class="flex-c g10 g12 information">
+                                    <div class="flex-c">
+                                        <div class="w7 f24 line m-f24" id="title">
+                                        </div>
+                                        <div class="w4 f18 m-f16">
+                                            Hosted by
+                                            <span class="w5" id="organizer"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-c g6">
+                                        <div class="f18 w4 m-f16">
+                                            <span class="w5 m-w7">Event time</span><br>
+                                            <span id="eventTime">
+                                            </span>
+                                        </div>
+                                        <div class="f18 w4 m-f16">
+                                            <span class="w5 m-w7">Event Location</span><br>
+                                            <span  id="eventLocation">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="primary" onclick="window.location.assign('/pages/homepage')">
+                                <div>Return to Homepage</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+    <script src="../../shared/js/layout.js"></script>
+    <script src="../../shared/js/activity.js"></script>
+    <script src="index.js"></script>
 </html>

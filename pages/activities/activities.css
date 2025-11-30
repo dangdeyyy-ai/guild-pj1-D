@@ -79,7 +79,13 @@ main {
         }
     }
 }
-
-a {
-    padding: 12px 8px 12px 0;
+@media only screen and (max-width: 1024px) {
+    .hero {
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .hero {
+        height: 150px;
+    }
 }

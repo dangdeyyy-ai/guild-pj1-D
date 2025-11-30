@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../shared/css/utils.css">
-    <link rel="stylesheet" href="activitiesDetails.css">
-</head>
-<body>
-    <header id="header">
-    </header>
-    <main></main>
-    <footer id="footer">
-    </footer>
-</body>
-<script src="../../shared/js/layout.js"></script>
-<script src="index.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../shared/css/utils.css" />
+        <link rel="stylesheet" href="activitiesDetails.css" />
+    </head>
+    <body>
+        <header id="header"></header>
+        <main>
+            <section class="section1">
+                <div class="container">
+                    <div class="flex-c g20 a-start">
+                        <button class="tertiary" onclick="window.location.assign(`/pages/activities`)">
+                            <img src="/assets/svg/arrow-forward-b.svg" />
+                            <div class="f16 w5 c-black">Return back</div>
+                        </button>
+                        <div class="flex-r g20 t-flex-c m-g10">
+                            <div class="pictureActivities" id="picture"></div>
+                            <div class="flex-c g12 box m-g16">
+                                <div class="flex-c g12 information">
+                                    <div class="flex-c">
+                                        <div class="w7 f40 line m-f24" id="title">
+                                        </div>
+                                        <div class="w4 f22 m-f18">
+                                            Hosted by
+                                            <span class="w5" id="organizer"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-c g12">
+                                        <div class="f20 w4 m-f16">
+                                            <span class="w5 m-w7">Sign up time: </span>
+                                            <span id="signUpTime"></span>
+                                        </div>
+                                        <div class="f20 w4 m-f16">
+                                            <span class="w5 m-w7">Event time: </span>
+                                            <span id="eventTime">
+                                            </span>
+                                        </div>
+                                        <div class="f20 w4 m-f16">
+                                            <span class="w5 m-w7">Event Location: </span>
+                                            <span  id="eventLocation">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="f18 w4 c-black m-f16" id="description" >
+                                    </div>
+                                </div>
+                                <button class="primary" onclick="window.location.assign(`/pages/activitesConfirmation/`)">
+                                    <div>Participate</div>
+                                    <img
+                                        src="/assets/svg/arrow-forward-w.svg"
+                                        class="PC Tablet"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+    <script src="../../shared/js/layout.js"></script>
+    <script src="../../shared/js/activity.js"></script>
+    <script src="index.js"></script>
 </html>
