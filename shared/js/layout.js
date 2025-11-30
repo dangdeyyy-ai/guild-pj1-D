@@ -9,7 +9,7 @@ footer.innerHTML = `
 
                 </div>
                 <div class="f14 w5">
-                    CompanyName @ 202X. All rights reserved.
+                    Farland Superlunary © 2025. All rights reserved.
                 </div>
             </div>
             <div class="flex-r t-flex-c g20 j-between">
