@@ -100,11 +100,18 @@ function menuAction() {
         header.innerHTML = `
         <div class="container flex-r j-between">
             <img src="/assets/svg/Menu.svg" class="Tablet Mobile hamburger">
-            <menu>
+            <div class="logo PC">
+
+            </div>
+            <menu class="PC Tablet Mobile">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
                 <a href="../../pages/activities/" id="activities">Activities</a>
                 <a href="../../pages/contactUs/" id="contactUs">Contact us</a>
             </menu>
+            <div class="flex-r g10 a-center PC">
+                <button class="secondary signUp">Sign Up</button>
+                <button class="primary signIn">Sign In</button>
+            </div>
         </div>
         `
     } else {
@@ -114,7 +121,7 @@ function menuAction() {
             <div class="logo">
 
             </div>
-            <menu class="PC">
+            <menu class="PC Tablet Mobile menuOff">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
                 <a href="../../pages/activities/" id="activities">Activities</a>
                 <a href="../../pages/contactUs/" id="contactUs">Contact us</a>

@@ -82,6 +82,34 @@ footer {
         font-weight: 500;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .menuOff {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 660px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
+        .linkContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .linkType {
+            line-height: 110%;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-black);
+        }
+        .link {
+            color: var(--text-black);
+            font-size: 10px;
+            font-weight: 500;
+        }
+    } 
+}
 section {
     padding: 40px 0;
     display: flex;

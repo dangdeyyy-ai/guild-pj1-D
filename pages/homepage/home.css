@@ -126,6 +126,7 @@
                 min-height: 59px;
                 color: rgba(33, 39, 42, 87%);
                 transition: 0.25s;
+                text-align: left;
                 span {
                     color: inherit;
                 }
@@ -159,6 +160,7 @@
                 .question {
                     max-width: 600px;
                     width: 95%;
+                    font-size: 16px;
                 }
                 .answer {
                     width: 95%;
