@@ -31,10 +31,6 @@
     }
 }
 @media only screen and (max-width: 660px) {
-    .section1 {
-        height: auto;
-        padding: 40px 0;
-    }
     .pictureActivities {
         height: 250.94px;
     }
