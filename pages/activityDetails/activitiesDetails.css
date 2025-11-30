@@ -3,7 +3,7 @@
 }
 
 .pictureActivities {
-    background-image: url("/assets/png/activites1.png");
+    background-image: url(/assets/activities-picture/blood.png);
     background-size: cover;
     object-fit: cover;
     width: calc((100% - 20px) / 2);
@@ -19,6 +19,10 @@
     }
 }
 @media only screen and (max-width: 1024px) {
+    .section1 {
+        height: max-content;
+        padding: 20px;
+    }
     .pictureActivities {
         width: 100%;
     }
