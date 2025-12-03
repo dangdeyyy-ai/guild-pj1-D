@@ -8,6 +8,8 @@
     --bg-light: #F4FFF9;
     --primary: #26ce79;
     --text-black: #21272A;
+    --text-title: ;
+    --text-header: ;
     --f-primary: "Roboto"
 }
 .c-green {
@@ -16,16 +18,18 @@
 .c-black {
     color: var(--text-black);
 }
+.c-title {
+    color: var(--text-title);
+}
+.c-header {
+    color: var(--text-header);
+}
 .c-white {
     color: white;
-}
-.bg-green {
-    background-color: var(--bg-light);
 }
 html, body {
     height: 100%;
     overflow-x: hidden;
-    background-color: #f4fbf8;
 }
 a {
     text-decoration: none;
